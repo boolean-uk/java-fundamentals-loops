@@ -11,6 +11,10 @@ public class Exercise {
 
     public void stepOne() {
         // TODO: 1. Write a for loop that adds the numbers 0 to 3 to the numsZeroToThree array
+        numsZeroToThree = new int[4];
+        for (int i = 0; i < 4; i++) {
+            numsZeroToThree[i] = i;
+        }
 
 
     }
@@ -31,13 +35,11 @@ public class Exercise {
         // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
 
 
-
         return false;
     }
 
     public boolean stepFive(String hobby) {
         // TODO 5. Write a for loop that checks if the hobby String is in the myHobbies array
-
 
 
         return false;
