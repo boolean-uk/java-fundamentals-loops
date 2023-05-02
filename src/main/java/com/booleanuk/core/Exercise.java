@@ -33,12 +33,19 @@ public class Exercise {
 
     public void stepThree() {
         // TODO: 3. Write a for loop that adds the numbers 3 to 0 (in that order) to the countdown array
-
-
+        // specify the lenght of the array inside the [] brackets
+        countdown = new int [4];
+        for (int i = 3; i >= 0 ; i--) {
+            countdown [3 - i] = i;
+        }
     }
 
     public boolean stepFour(int num) {
-        // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
+        // TODO: 4. Write a for loop that checks if num is in the favouriteNumbers array
+        for (int i = 0; i < favouriteNumbers.length; i++) {
+            if (favouriteNumbers [i] == num ) {
+                return true;
+            }
 
 
         return false;
