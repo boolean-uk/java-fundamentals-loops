@@ -11,7 +11,9 @@ public class Exercise {
 
     public void stepOne() {
         // TODO: 1. Write a for loop that adds the numbers 0 to 3 to the numsZeroToThree array
+        // init the array Length 'cause its immutable!
         numsZeroToThree = new int[4];
+        // Loop over the array
         for (int i = 0; i < 4; i++) {
             numsZeroToThree[i] = i;
         }
@@ -21,6 +23,10 @@ public class Exercise {
 
     public void stepTwo() {
         // TODO: 2. Write a for loop that adds the numbers 5 to 10 to the numsFiveToTen array
+        numsFiveToTen = new int[6];
+        for (int i = 5; i <= 10; i++) {
+            numsFiveToTen[i - 5] = i;
+        }
 
 
     }
