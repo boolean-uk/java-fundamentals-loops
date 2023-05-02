@@ -1,5 +1,7 @@
 package com.booleanuk.core;
 
+import java.lang.reflect.Array;
+
 public class Exercise {
     public int[] numsZeroToThree;
     public int[] numsFiveToTen;
@@ -30,23 +32,32 @@ public class Exercise {
     public void stepThree() {
         // TODO: 3. Write a for loop that adds the numbers 3 to 0 (in that order) to the countdown array
         countdown= new int[4];
-        for(int i=3;i>=0 ;i--){
-            countdown[i]=i;
+        int val=3;
+        for(int i=0;i<=3 ;i++){
+            countdown[i]=val;
+            val--;
         }
 
     }
 
     public boolean stepFour(int num) {
         // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
-
-
+        for(int n: favouriteNumbers){
+            if(num == n){
+                return true;
+            }
+        }
 
         return false;
     }
 
     public boolean stepFive(String hobby) {
         // TODO 5. Write a for loop that checks if the hobby String is in the myHobbies array
-
+        for(String h: myHobbies){
+            if(hobby.equals(h)){
+                return true;
+            }
+        }
 
 
         return false;
