@@ -52,8 +52,11 @@ public class Exercise {
 
     public boolean stepFive(String hobby) {
         // TODO 5. Write a for loop that checks if the hobby String is in the myHobbies array
-
-
+        for (int i = 0; i < myHobbies.length; i++) {
+            if (myHobbies[i].equals(hobby)) {
+                return true;
+            }
+        }
         return false;
     }
 }
