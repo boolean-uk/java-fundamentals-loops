@@ -1,5 +1,7 @@
 package com.booleanuk.core;
 
+import java.util.Objects;
+
 public class Exercise {
     public int[] numsZeroToThree;
     public int[] numsFiveToTen;
@@ -40,7 +42,11 @@ public class Exercise {
 
     public boolean stepFour(int num) {
         // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
-
+        for (int favouriteNumber : favouriteNumbers) {
+            if (favouriteNumber == num) {
+                return true;
+            }
+        }
 
 
         return false;
@@ -48,7 +54,11 @@ public class Exercise {
 
     public boolean stepFive(String hobby) {
         // TODO 5. Write a for loop that checks if the hobby String is in the myHobbies array
-
+        for (String myHobby : myHobbies) {
+            if (Objects.equals(myHobby, hobby)) {
+                return true;
+            }
+        }
 
 
         return false;
