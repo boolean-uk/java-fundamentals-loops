@@ -17,7 +17,9 @@ public class Exercise {
 
     public void stepTwo() {
         // TODO: 2. Write a for loop that adds the numbers 5 to 10 to the numsFiveToTen array
-
+        for (int i =0 ;i<numsFiveToTen.length;i++) {
+            numsFiveToTen[i] = i+5;
+        }
 
     }
 
@@ -29,7 +31,12 @@ public class Exercise {
 
     public boolean stepFour(int num) {
         // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
-
+        for (int number:favouriteNumbers) {
+            if(number == num){
+                return true;
+            }
+            return false;
+        }
 
 
         return false;
