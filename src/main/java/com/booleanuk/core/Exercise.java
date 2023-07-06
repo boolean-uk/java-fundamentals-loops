@@ -19,7 +19,10 @@ public class Exercise {
 
     public void stepTwo() {
         // TODO: 2. Write a for loop that adds the numbers 5 to 10 to the numsFiveToTen array
-
+        numsFiveToTen = new int[6];
+        for(int i =0; i <= 5; i++) {
+            numsFiveToTen[i] = 5 + i;
+        }
 
     }
 
@@ -33,10 +36,15 @@ public class Exercise {
 
     public boolean stepFour(int num) {
         // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
+        boolean isOnTheList = false;
+        for(int number : favouriteNumbers) {
+            if (number == num) {
+                isOnTheList = true;
+            }
+        }
 
 
-
-        return false;
+        return isOnTheList;
     }
 
     public boolean stepFive(String hobby) {
