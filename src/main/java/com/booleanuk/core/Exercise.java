@@ -35,7 +35,6 @@ public class Exercise {
             if(number == num){
                 return true;
             }
-            return false;
         }
 
 
