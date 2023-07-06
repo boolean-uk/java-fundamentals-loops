@@ -2,7 +2,7 @@ package com.booleanuk.core;
 
 public class Exercise {
     public int[] numsZeroToThree;
-    public int[] numsFiveToTen;
+    public int[] numsFiveToTen = new int[6];
     public int[] countdown;
 
     public int[] favouriteNumbers = {1, 2, 4, 5, 7, 8, 10};
