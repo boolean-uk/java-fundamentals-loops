@@ -1,5 +1,7 @@
 package com.booleanuk.core;
 
+import java.util.stream.IntStream;
+
 public class Exercise {
     public int[] numsZeroToThree;
     public int[] numsFiveToTen;
@@ -11,20 +13,20 @@ public class Exercise {
 
     public void stepOne() {
         // TODO: 1. Write a for loop that adds the numbers 0 to 3 to the numsZeroToThree array
-
-
+        numsZeroToThree = IntStream.range(0, 4).toArray();
     }
 
     public void stepTwo() {
         // TODO: 2. Write a for loop that adds the numbers 5 to 10 to the numsFiveToTen array
-
-
+        numsFiveToTen = IntStream.range(5, 11).toArray();
     }
 
     public void stepThree() {
         // TODO: 3. Write a for loop that adds the numbers 3 to 0 (in that order) to the countdown array
-
-
+        countdown = IntStream
+                .range(0, 4)
+                .map(i -> 3 - i)
+                .toArray();
     }
 
     public boolean stepFour(int num) {
