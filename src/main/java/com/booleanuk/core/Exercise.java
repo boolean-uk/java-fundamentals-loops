@@ -40,7 +40,6 @@ public class Exercise {
                 return true;
             }
         }
-
         return false;
     }
 
