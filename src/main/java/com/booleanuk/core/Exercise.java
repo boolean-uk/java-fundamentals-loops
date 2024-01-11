@@ -45,7 +45,13 @@ public class Exercise {
     public boolean stepFour(int num) {
         // TODO: 6. Write a for loop that checks if num is in the favouriteNumbers array
 
+        for (int i = 0; i < favouriteNumbers.length; i++) {
+            if (num == favouriteNumbers[i]){
+                return true;
+            }
 
+
+        }
 
         return false;
     }
@@ -53,7 +59,11 @@ public class Exercise {
     public boolean stepFive(String hobby) {
         // TODO 5. Write a for loop that checks if the hobby String is in the myHobbies array
 
-
+        for (int i = 0; i < myHobbies.length; i++) {
+            if (hobby == myHobbies[i]){
+                return true;
+            }
+        }
 
         return false;
     }
